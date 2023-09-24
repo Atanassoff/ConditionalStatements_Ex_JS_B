@@ -1,0 +1,18 @@
+function demo(input){
+    let budget = Number(input[0]);
+    let statists = Number(input[1]);
+    let outfit = Number(input[2]);
+    let decor = budget * 0.1;
+    let allClothes = statists * outfit;
+    if(statists > 150){allClothes *= 0.9;}
+    let money = decor + allClothes;
+    let diff = Math.abs(budget - money).toFixed(2);
+    if(budget >= money){
+        console.log(`Action!`);
+        console.log(`Wingard starts filming with ${diff} leva left.`); 
+    }
+    else{
+        console.log(`Not enough money!`);
+        console.log(`Wingard needs ${diff} leva more.`); 
+    }
+}
