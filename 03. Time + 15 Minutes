@@ -1,8 +1,0 @@
-function demo(input){
-    let h = Number(input[0]);
-    let min = Number(input[1]);
-    let allMin = h * 60 + min + 15;
-    min = allMin % 60; h = Math.floor(allMin / 60); h %= 24; 
-    if(min < 10){console.log(`${h}:0${min}`);}
-    else{console.log(`${h}:${min}`);}
-}
